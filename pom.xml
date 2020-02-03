@@ -1,0 +1,135 @@
+<project 
+	xmlns="http://maven.apache.org/POM/4.0.0" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.mr</groupId>
+  <artifactId>ssm-curd</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <spring.version>5.0.5.RELEASE</spring.version>
+  </properties>
+  
+  
+  <!-- 引入项目需要的jar包 -->
+  <dependencies>
+	  
+	 <!-- jstl -->
+	 <!-- https://mvnrepository.com/artifact/jstl/jstl -->
+	<dependency>
+	    <groupId>jstl</groupId>
+	    <artifactId>jstl</artifactId>
+	    <version>1.2</version>
+	</dependency>
+	 
+	 <!-- servlet-api -->
+	 <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+	<dependency>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>javax.servlet-api</artifactId>
+	    <version>3.0.1</version>
+	    <scope>provided</scope>
+	</dependency>
+
+	 
+	 <!-- junit -->
+	 <dependency>
+     	<groupId>junit</groupId>
+     	<artifactId>junit</artifactId>
+     	<version>3.8.1</version>
+     </dependency>
+	 
+	 <!-- 使用@ResponseBody需要该包 ，返回json字符串支持-->
+	 <!-- jackson -->
+	 <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+	<dependency>
+	    <groupId>com.fasterxml.jackson.core</groupId>
+	    <artifactId>jackson-databind</artifactId>
+	    <version>2.10.0</version>
+	</dependency>
+	 
+    <!-- Spring webMvc -->
+   <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-webmvc</artifactId>
+	    <version>${spring.version}</version>
+	</dependency>
+	<!-- Spring jdbc -->
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-jdbc</artifactId>
+	    <version>${spring.version}</version>
+	</dependency>
+	
+	<!-- SpringTest -->
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-test</artifactId>
+	    <version>${spring.version}</version>
+	</dependency>
+
+	<!-- 分页插件 -->
+	<dependency>
+	    <groupId>com.github.pagehelper</groupId>
+	    <artifactId>pagehelper</artifactId>
+	    <version>5.0.0</version>
+	</dependency>
+	
+	<!-- Spring Aspect aop -->
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-aspects -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-aspects</artifactId>
+	    <version>${spring.version}</version>
+	</dependency>
+	
+	<!-- Mybatis -->
+	<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+	<dependency>
+	    <groupId>org.mybatis</groupId>
+	    <artifactId>mybatis</artifactId>
+	    <version>3.5.0</version>
+	</dependency>
+	
+	<!-- Mybatis Integrate Spring -->
+	<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+	<dependency>
+	    <groupId>org.mybatis</groupId>
+	    <artifactId>mybatis-spring</artifactId>
+	    <version>2.0.0</version>
+	</dependency>
+	
+	<!-- 数据库连接池 -->
+	<!-- https://mvnrepository.com/artifact/com.mchange/c3p0 -->
+	<dependency>
+	    <groupId>com.mchange</groupId>
+	    <artifactId>c3p0</artifactId>
+	    <version>0.9.5.2</version>
+	</dependency>
+	
+	<!-- 数据库驱动 -->
+	<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>8.0.15</version>
+	</dependency>
+	
+	<!-- Mybatis 逆向工程 -->
+	<!-- https://mvnrepository.com/artifact/org.mybatis.generator/mybatis-generator-core -->
+	<dependency>
+	    <groupId>org.mybatis.generator</groupId>
+	    <artifactId>mybatis-generator-core</artifactId>
+	    <version>1.4.0</version>
+	</dependency>
+	
+  </dependencies>
+ 
+  
+</project>
